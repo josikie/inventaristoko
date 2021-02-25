@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/product_name"
+        android:textColor="#000A37"
+        android:textSize="15sp" tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="375dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_shape"
+        android:hint="@string/fill_with_product_name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000A37"
+        android:textColorHint="#347791"
+        android:textSize="12sp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/price_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/price"
+        android:textColor="#000A37"
+        android:textSize="15sp" tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/edt_price"
+        android:layout_width="369dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/price_price"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_shape"
+        android:hint="@string/fill_with_product_price"
+        android:padding="10dp"
+        android:textColor="#000A37"
+        android:textColorHint="#347791"
+        android:textSize="12sp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/quantity_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_price"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/quantity"
+        android:textColor="#000A37"
+        android:textSize="15sp" tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="380dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/quantity_quantity"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_shape"
+        android:hint="@string/fill_with_product_quantity"
+        android:padding="10dp"
+        android:textColor="#000A37"
+        android:textColorHint="#347791"
+        android:textSize="12sp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_quantity"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/supplier_contact"
+        android:textColor="#000A37"
+        android:textSize="15sp" tools:targetApi="jelly_bean" />
+
+    <EditText
+        android:id="@+id/edt_supplier"
+        android:layout_width="380dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/supplier"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_shape"
+        android:hint="@string/fill_with_product_supplier_contact"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000A37"
+        android:textColorHint="#347791"
+        android:textSize="12sp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btn_save_product"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_shape_corner"
+        android:fontFamily="sans-serif"
+        android:text="@string/save_product"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
